@@ -39,7 +39,7 @@ jobs:
       with:
         files: '["**/aksdeploy.yaml"]'
       env:
-        acrimageurl: ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:$GITHUB_RUN_ID
+        acrimageurl: ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}
 
           # Set the target Azure Kubernetes Service (AKS) cluster. 
     - uses: azure/aks-set-context@v1
