@@ -59,9 +59,8 @@ jobs:
      # Deploy app to AKS
     - uses: azure/k8s-deploy@v1
       with:
-     #   manifests: |
-      #    manifests/deployment.yml
-       #   manifests/service.yml
+        manifests: |
+          aksdeploy.yaml
         images: |
           ${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}:$GITHUB_RUN_ID
         imagepullsecrets: |
