@@ -71,6 +71,6 @@ jobs:
           aksdeploy.yaml
         #images: |
           #${{ env.REGISTRY_NAME }}.azurecr.io/${{ env.APP_NAME }}
-        imagepullsecrets: |
-          ${{ env.SECRET }}
+        #imagepullsecrets: |
+          #${{ env.SECRET }}
         namespace: ${{ env.NAMESPACE }}
